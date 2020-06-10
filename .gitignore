@@ -1,3 +1,7 @@
+# Unreal stuff
+Binaries/
+Intermediate/
+
 # Prerequisites
 *.d
 
