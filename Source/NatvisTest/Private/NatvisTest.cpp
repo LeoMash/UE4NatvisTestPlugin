@@ -186,6 +186,21 @@ void TestSmartPointers()
 	nop(); // BREAK HERE
 }
 
+enum E
+{
+	E0,
+	E1,
+	E2,
+};
+
+enum class EC
+{
+	E0,
+	E1,
+	E2,
+};
+
+
 void TestTMap()
 {
 	TMap<int, int> empty;
@@ -199,6 +214,9 @@ void TestTMap()
 			Dummy{4, 5, 6}, DummyBig{7, {1}}
 		}
 	};
+
+	TMap<E, int> enum_map{{E0, 0}, {E1, 1}, {E2, 2}};
+	TMap<EC, int> enum_class_map{{EC::E0, 0}, {EC::E1, 1}, {EC::E2, 2}};
 
 	nop(); // BREAK HERE
 }
